@@ -1,62 +1,74 @@
-html, body{
+body{
   background-color: black;
-  height: 100%;
+  font-family: Tahoma, Geneva, sans-serif;
+  text-align: center;
+  color: white;
+}
+
+a{
+  text-decoration: underline;
+}
+
+a:hover{
+  text-decoration:none;
+}
+a:visited{
+  color: #0000EE;
 }
 
 .page{
-  height: 96%;
+  height: 400px;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  margin: 2%;
 }
 
 .movie{
   display: flex;
   flex-direction: row;
-  height: 46%;
+  max-height: 184px;
   justify-content: center;
-  margin: 2%;
+  margin: 8px 0;
   align-items: center;
   align-content: center;
 }
 
 .movie img{
-  max-height: 90%;
-  margin: 5%;
+  max-height: 165px;
+  margin: 9px 0;
 }
 
 .watch{
-  height: 96%;
+  height: 176px;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  margin: 2%;
+  margin: 4px;
 }
 
 .watch a{
-  height: 50%;
+  height: 100px;
   margin: 0;
 }
 
 .place{
   display: flex;
   flex-direction: row;
-  height: 100%;
   margin: 0;
+  height: 100px;
   justify-content: space-between;
   align-items: center;
   align-content: center;
 }
 
 .place img{
-  height: 46%;
+  height: 46px;
   width: auto;
-  margin: 2%;
+  margin: 5px;
 }
 
-.place h1{
-  font-size: 200%;
+.place h2{
+  font-size: 150%;
   color: white;
   text-align: center;
 }
@@ -71,52 +83,93 @@ html, body{
 }
 
 @media (max-width: 700px){
-  .place h1{
+  .place h2{
     font-size: 150%;
+  }
+  h1{
+    font-size: 150%;
+  }
+  h2{
+    font-size: 125%;
+  }
+  p{
+    font-size: 75%;
   }
 }
 
 @media (max-width: 525px){
-  .place h1{
-    font-size: 100%;
+  .movie {
+    max-height: 125px;
   }
   .movie img{
-    max-height: 80%;
+    max-height: 125px;
   }
-  .place img{
-    height: 40%;
+  .watch{
+    max-height: 125px;
+  }
+  .watch a{
+    height: 55px;
+  }
+  .place{
+    height: 55px;
+  }
+  .place h2{
+    font-size: 100%;
   }
 }
 
 @media (max-width: 400px){
-  .movie img{
-    max-height: 70%;
+  .page {
+    height: 300px;
   }
-  .place h1{
-    font-size: 80%;
+  .movie {
+    max-height: 100px;
+  }
+  .movie img{
+    max-height: 100px;
+  }
+  .watch{
+    max-height: 100px;
+  }
+  .watch a{
+    height: 50px;
+  }
+  .place{
+    height: 50px;
   }
   .place img{
-    height: 30%;
+    height: 35px;
   }
 }
 
 @media (max-width: 350px){
   .movie{
-    margin: 0;
+    margin: 10px;
   }
   .movie img{
-    margin: 1%;
+    margin: 5px;
   }
   .watch{
     margin: 0;
   }
-  .movie img{
-    max-height: 60%;
+  h1{
+    font-size: 125%;
   }
-  .place h1{
+  h2{
+    font-size: 100%;
+  }
+  p{
+    font-size: 50%;
+  }
+  .place h2{
     font-size: 70%;
   }
+}
+@media (max-width: 275px){
   .place img{
-    height: 25%;
+    height: 30px;
+  }
+  .place h2{
+    font-size: 60%;
   }
 }
