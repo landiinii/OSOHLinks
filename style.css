@@ -1,0 +1,122 @@
+html, body{
+  background-color: black;
+  height: 100%;
+}
+
+.page{
+  height: 96%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+
+.movie{
+  display: flex;
+  flex-direction: row;
+  height: 46%;
+  justify-content: center;
+  margin: 2%;
+  align-items: center;
+  align-content: center;
+}
+
+.movie img{
+  max-height: 90%;
+  margin: 5%;
+}
+
+.watch{
+  height: 96%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+
+.watch a{
+  height: 50%;
+  margin: 0;
+}
+
+.place{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.place img{
+  height: 46%;
+  width: auto;
+  margin: 2%;
+}
+
+.place h1{
+  font-size: 200%;
+  color: white;
+  text-align: center;
+}
+
+.watch a{
+  color: white;
+  text-decoration: none;
+}
+
+.watch a:hover{
+  text-decoration:underline;
+}
+
+@media (max-width: 700px){
+  .place h1{
+    font-size: 150%;
+  }
+}
+
+@media (max-width: 525px){
+  .place h1{
+    font-size: 100%;
+  }
+  .movie img{
+    max-height: 80%;
+  }
+  .place img{
+    height: 40%;
+  }
+}
+
+@media (max-width: 400px){
+  .movie img{
+    max-height: 70%;
+  }
+  .place h1{
+    font-size: 80%;
+  }
+  .place img{
+    height: 30%;
+  }
+}
+
+@media (max-width: 350px){
+  .movie{
+    margin: 0;
+  }
+  .movie img{
+    margin: 1%;
+  }
+  .watch{
+    margin: 0;
+  }
+  .movie img{
+    max-height: 60%;
+  }
+  .place h1{
+    font-size: 70%;
+  }
+  .place img{
+    height: 25%;
+  }
+}
